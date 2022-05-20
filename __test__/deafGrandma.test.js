@@ -1,4 +1,4 @@
-const deafGrandma = require('../src/deafGrandma')
+const deafGrandma = require('../src/deafGrandma');
 
 describe('deafGrandma', () => {
   it('outputs an array', () => {
