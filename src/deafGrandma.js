@@ -1,5 +1,11 @@
 const deafGrandma = (array) => {
-  return []
+  output = array.map((string) => {
+    if(string.toLowerCase() === string) {
+      return 'HUH?! SPEAK UP, SONNY!';
+    }
+  })
+
+  return output;
 }
 
 // Write a Deaf Grandma program. Whatever you say to grandma (whatever you type in), she should respond with HUH?! SPEAK UP, SONNY!, unless you shout it (type in all capitals).
