@@ -1,5 +1,9 @@
 const annoyingKid = (string) => {
-  return `I don't think you ${string.split(' ')[2]} ${string.split(' ')[3].replaceAll('.', '')} today, I think you didn't ${string.split(' ')[2].slice(0, -2)} at all!`
+  if(string.includes("didn't")) {
+    return `I don't think you ${string.split(' ')[2]} ${string.split(' ')[3]} ${string.split(' ')[4].replaceAll('.', '')} today, I think you did ${string.split(' ')[3]} it!`
+  } else {
+    return `I don't think you ${string.split(' ')[2]} ${string.split(' ')[3].replaceAll('.', '')} today, I think you didn't ${string.split(' ')[2].slice(0, -2)} at all!`
+  }
 };
 
 // Alan's child can be annoying at times.
