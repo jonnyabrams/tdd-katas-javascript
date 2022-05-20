@@ -2,6 +2,10 @@ const deafGrandma = (array) => {
   output = array.map((string) => {
     if(string.toLowerCase() === string) {
       return 'HUH?! SPEAK UP, SONNY!';
+    } else if (string === 'BYE') {
+      return 'OK, BYE!'
+    } else if(string.toUpperCase() === string) {
+      return 'NO, NOT SINCE 1938!';
     }
   })
 
