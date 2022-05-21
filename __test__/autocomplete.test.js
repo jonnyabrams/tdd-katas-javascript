@@ -12,4 +12,8 @@ describe('autocomplete', () => {
   it('is not case sensitive', () => {
     expect(autocomplete('ba', ['ball', 'Bash', 'cat', 'bop', 'back'])).toEqual(['ball', 'Bash', 'back']);
   });
+
+  it('outputs no more than five words', () => {
+    expect(autocomplete('ba', ['ball', 'Bash', 'cat', 'bop', 'back', 'balance', 'Bat', 'Bad', 'base', 'badge'])).toEqual(['ball', 'Bash', 'back', 'balance', 'Bat']);
+  });
 });

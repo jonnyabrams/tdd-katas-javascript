@@ -1,6 +1,6 @@
 const autocomplete = (string, array) => {
   output = array.filter(word => word.toLowerCase().startsWith(string.toLowerCase()));
-  return output;
+  return output.slice(0, 5);
 };
 
 // It's time to create an autocomplete function! Yay!
