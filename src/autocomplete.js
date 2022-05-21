@@ -1,5 +1,5 @@
 const autocomplete = (string, array) => {
-  output = array.filter(word => word.toLowerCase().startsWith(string.toLowerCase()));
+  output = array.filter(word => word.toLowerCase().startsWith(string.replace(/[^A-Za-z]/g, '').toLowerCase()));
   return output.slice(0, 5);
 };
 

@@ -16,4 +16,8 @@ describe('autocomplete', () => {
   it('outputs no more than five words', () => {
     expect(autocomplete('ba', ['ball', 'Bash', 'cat', 'bop', 'back', 'balance', 'Bat', 'Bad', 'base', 'badge'])).toEqual(['ball', 'Bash', 'back', 'balance', 'Bat']);
   });
+
+  it('ignores any input character that is not a letter', () => {
+    expect(autocomplete('a3_i', ['airplane','airport','apple','ball'])).toEqual(['airplane','airport']);
+  });
 });
